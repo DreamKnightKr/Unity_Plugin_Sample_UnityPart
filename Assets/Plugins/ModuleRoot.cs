@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Modules : MonoBehaviour {
+public class ModuleRoot : MonoBehaviour {
 	public TextMesh msg;
 	public AndroidJavaObject activity;
 	private AndroidJavaObject pluginSimple = null;
