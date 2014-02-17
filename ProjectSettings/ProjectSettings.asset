@@ -104,8 +104,8 @@ PlayerSettings:
   iPadHighResLandscapeSplashScreen: {fileID: 0}
   AndroidTargetDevice: 0
   AndroidSplashScreenScale: 0
-  AndroidKeystoreName: G:/Project/Unity3D/[Mobile]/Com2usGames.keystore
-  AndroidKeyaliasName: com2us_android
+  AndroidKeystoreName: G:/Project/Unity3D/[Mobile]/SamplePlugin/Mobile_SamplePlugin.keystore
+  AndroidKeyaliasName: cws
   resolutionDialogBanner: {fileID: 0}
   m_BuildTargetIcons:
   - m_BuildTarget: 
