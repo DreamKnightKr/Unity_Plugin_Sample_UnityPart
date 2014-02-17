@@ -1,7 +1,4 @@
-﻿using UnityEngine;
-using System.Collections;
-
-public interface IModuleNativeIndicator {
+﻿public interface IModuleNativeIndicator {
 
 	void Init();
 	string GetName();

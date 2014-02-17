@@ -46,7 +46,7 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\CShap\NewBehaviourScript.boo" />
+     <Compile Include="Assets\Scripts\Boo\GUIScriptBoo.boo" />
      <None Include="Assets\Plugins\iOS\dummy.txt" />
      <None Include="Assets\Plugins\Android\res\values\styles.xml" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
@@ -54,6 +54,8 @@
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
       <Project>{AADA56C8-0E6C-4216-9D29-4B77D6FA1092}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+    <ProjectReference Include="Assembly-Boo-firstpass.booproj">
+      <Project>{2669C214-2219-51F5-6C91-9B98C506E0B5}</Project>      <Name>Assembly-Boo-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,11 +5,11 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{C5796AE5-ED2E-337B-3FAE-89F36CD64E93}</ProjectGuid>
+	<ProjectGuid>{2669C214-2219-51F5-6C91-9B98C506E0B5}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
-	<AssemblyName>Assembly-Boo</AssemblyName>
+	<AssemblyName>Assembly-Boo-firstpass</AssemblyName>
 	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
 	<FileAlignment>512</FileAlignment>
 	<BaseDirectory>Assets</BaseDirectory>
@@ -46,17 +46,14 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\Boo\GUIScriptBoo.boo" />
+     <Compile Include="Assets\Plugins\Scripts\Boo\IModuleNativeIndicatorBoo.boo" />
+     <Compile Include="Assets\Plugins\Scripts\Boo\ModuleManagerBoo.boo" />
+     <Compile Include="Assets\Plugins\Scripts\Boo\ModuleNativeIndicatorBoo_Android.boo" />
+     <Compile Include="Assets\Plugins\Scripts\Boo\ModuleNativeIndicatorBoo_Dummy.boo" />
+     <Compile Include="Assets\Plugins\Scripts\Boo\ModuleNativeIndicatorBoo_iOS.boo" />
      <None Include="Assets\Plugins\iOS\dummy.txt" />
      <None Include="Assets\Plugins\Android\res\values\styles.xml" />
      <None Include="Assets\Plugins\Android\AndroidManifest.xml" />
- <Reference Include="Assembly-Boo-firstpass">
- <HintPath>Library\ScriptAssemblies\Assembly-Boo-firstpass.dll</HintPath>
- </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="Assembly-CSharp-firstpass-vs.csproj">
-      <Project>{AADA56C8-0E6C-4216-9D29-4B77D6FA1092}</Project>      <Name>Assembly-CSharp-firstpass-vs</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -4,7 +4,6 @@ using System.Collections;
 public class ModuleManager : MonoBehaviour
 {
 	IModuleNativeIndicator module = null;
-	bool m_bVisibleIndicator = false;
 
 	void Start()
 	{
@@ -30,8 +29,8 @@ public class ModuleManager : MonoBehaviour
 			Debug.LogError("Can't Not Create Module");
 	}
 
-	public void ShowNativeIndicator()
+	public void ShowNativeIndicator(bool bVisible)
 	{
-		module.SetVisibleNativeIndicator( true );
+		module.SetVisibleNativeIndicator( bVisible );
 	}
 }
