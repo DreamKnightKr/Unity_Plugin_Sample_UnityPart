@@ -13,7 +13,7 @@ public class ModuleNativeIndicator_Android : IModuleNativeIndicator {
 
 		Debug.Log("Try Call Plugin");
 		pluginSimple = new AndroidJavaObject("com.cws.IndicatorPlugin.IndicatorPlugin");
-		//pluginSimple.Call("initActivity", name, "OnMessageFromPlug", "RTT with Pluging");
+		pluginSimple.Call("Init", activity);
 	}
 
 	public string GetName()
@@ -28,8 +28,8 @@ public class ModuleNativeIndicator_Android : IModuleNativeIndicator {
 
 	public void SetVisibleNativeIndicator(bool bVisible)
 	{
-		if(null == activity) return;
+		if(null == pluginSimple) return;
 
-
+		pluginSimple.Call("ShowProgressIndicator", 1);
 	}
 }

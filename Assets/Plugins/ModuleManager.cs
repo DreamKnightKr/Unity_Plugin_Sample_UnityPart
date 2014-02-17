@@ -30,8 +30,8 @@ public class ModuleManager : MonoBehaviour
 			Debug.LogError("Can't Not Create Module");
 	}
 
-	void ShowNativeIndicator()
+	public void ShowNativeIndicator()
 	{
-		module.SetVisibleNativeIndicator( (m_bVisibleIndicator = !m_bVisibleIndicator) );
+		module.SetVisibleNativeIndicator( true );
 	}
 }
