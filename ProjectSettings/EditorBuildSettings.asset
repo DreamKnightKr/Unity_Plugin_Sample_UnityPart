@@ -6,4 +6,4 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Sample/Scripts/Main.unity
+    path: Assets/Sample/NativeIndicator/Main.unity
