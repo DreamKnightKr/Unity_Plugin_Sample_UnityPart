@@ -23,4 +23,4 @@ class ModuleNativeIndicatorBoo_Android (IModuleNativeIndicatorBoo):
 		if null == pluginSimple:
 			return
 
-		pluginSimple.Call("ShowProgressIndicator", true);
+		pluginSimple.Call("ShowProgressIndicator", bVisible);

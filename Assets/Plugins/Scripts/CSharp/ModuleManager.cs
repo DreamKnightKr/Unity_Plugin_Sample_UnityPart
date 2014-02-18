@@ -31,6 +31,7 @@ public class ModuleManager : MonoBehaviour
 
 	public void ShowNativeIndicator(bool bVisible)
 	{
+		Debug.Log("[ModuleManager]Call SetVisibleNativeIndicator");
 		module.SetVisibleNativeIndicator( bVisible );
 	}
 }

@@ -30,6 +30,6 @@ public class ModuleNativeIndicator_Android : IModuleNativeIndicator {
 	{
 		if(null == pluginSimple) return;
 
-		pluginSimple.Call("ShowProgressIndicator", true);
+		pluginSimple.Call("ShowProgressIndicator", bVisible);
 	}
 }

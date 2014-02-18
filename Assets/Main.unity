@@ -250,8 +250,8 @@ GameObject:
   - 92: {fileID: 1793546960}
   - 124: {fileID: 1793546959}
   - 81: {fileID: 1793546958}
-  - 114: {fileID: 1793546963}
   - 114: {fileID: 1793546964}
+  - 114: {fileID: 1793546963}
   m_Layer: 0
   m_Name: Camera GUI
   m_TagString: MainCamera
@@ -331,8 +331,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d66f638e8fd82f3408f00b180e5b1809, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mngCSharp: {fileID: 0}
-  mngBoo: {fileID: 0}
 --- !u!114 &1793546964
 MonoBehaviour:
   m_ObjectHideFlags: 0

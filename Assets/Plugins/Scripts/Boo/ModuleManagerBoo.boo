@@ -8,7 +8,7 @@ class ModuleManagerBoo (MonoBehaviour):
 		
 		if RuntimePlatform.Android == Application.platform:
     		module = ModuleNativeIndicatorBoo_Android()
-    	if RuntimePlatform.IPhonePlayer == Application.platform:
+    	elif RuntimePlatform.IPhonePlayer == Application.platform:
     		module = ModuleNativeIndicatorBoo_iOS()
     	else:
     		module = ModuleNativeIndicatorBoo_Dummy()
