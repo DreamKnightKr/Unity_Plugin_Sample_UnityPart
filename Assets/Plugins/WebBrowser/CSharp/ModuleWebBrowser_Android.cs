@@ -32,4 +32,11 @@ public class ModuleWebBrowser_Android : IModuleWebBrowser {
 
 		pluginSimple.CallStatic("OpenWebBrowser", url);
 	}
+
+	public void OpenEmbeddedWebPage(string url)
+	{
+		if(null == pluginSimple) return;
+		
+		pluginSimple.CallStatic("OpenEmbeddedWebBrowser", url);
+	}
 }

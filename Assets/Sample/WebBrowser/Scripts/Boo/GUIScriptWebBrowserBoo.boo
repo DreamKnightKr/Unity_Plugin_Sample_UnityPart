@@ -17,7 +17,7 @@ class GUIScriptWebBrowserBoo (MonoBehaviour):
 		fPosY as double = 50
 		fYInterval as double = 100
 		nYPosCount as int = 0
-
+		/*
 		// [Boo -> C#] Call Class's Function With Dot Operation
 		if GUI.Button(Rect(fPosX, fPosY + (fYInterval * nYPosCount), 200, 80), "[Boo->C#]Dot Oper."):
 			mngCSharp = GameObject.Find("NativeModule_CSharp").GetComponent("ModuleManagerWebBrowser")
@@ -40,3 +40,5 @@ class GUIScriptWebBrowserBoo (MonoBehaviour):
 		if GUI.Button(Rect(fPosX, fPosY + (fYInterval * nYPosCount), 200, 80), "[Boo->Boo]SendMessage"):
 			mngBoo = GameObject.Find("NativeModule_Boo").GetComponent("ModuleManagerWebBrowserBoo")
 			mngBoo.SendMessage("OpenWebPage", "http://www.naver.com")
+
+*/

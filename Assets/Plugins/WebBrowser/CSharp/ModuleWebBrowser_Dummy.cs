@@ -17,4 +17,8 @@ public class ModuleWebBrowser_Dummy : IModuleWebBrowser {
 	public void OpenWebPage(string url)
 	{
 	}
+
+	public void OpenEmbeddedWebPage(string url)
+	{
+	}
 }

@@ -5,4 +5,5 @@
 	string GetVersion();
 
 	void OpenWebPage(string url);
+	void OpenEmbeddedWebPage(string url);
 }

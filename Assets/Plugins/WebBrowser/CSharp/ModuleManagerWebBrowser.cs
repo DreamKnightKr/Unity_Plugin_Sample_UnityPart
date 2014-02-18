@@ -34,4 +34,10 @@ public class ModuleManagerWebBrowser : MonoBehaviour
 		Debug.Log("[ModuleManager]Call OpenWebPage");
 		module.OpenWebPage( url );
 	}
+
+	public void OpenEmbeddedWebPage(string url)
+	{
+		Debug.Log("[ModuleManager]Call OpenEmbeddedWebPage");
+		module.OpenEmbeddedWebPage( url );
+	}
 }
