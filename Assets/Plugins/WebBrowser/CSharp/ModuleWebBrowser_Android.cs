@@ -1,11 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class ModuleWebBrowser_Android : IModuleWebBrowser {
+public class ModuleWebBrowser_Android : ModuleWebBrowser_Dummy {
+#if UNITY_ANDROID
 	AndroidJavaObject activity = null;
 	AndroidJavaObject pluginSimple = null;
 
-	public void Init()
+	public override void Init()
 	{
 		// 현재 실행 중인 유니티 액티비티를 가져와서 변수에 저장
 		AndroidJavaClass jc = new AndroidJavaClass("com.unity3d.player.UnityPlayer");
@@ -16,27 +17,28 @@ public class ModuleWebBrowser_Android : IModuleWebBrowser {
 		pluginSimple.Call("Init", activity);
 	}
 
-	public string GetName()
+	public override string GetName()
 	{
 		return "Android";
 	}
 
-	public string GetVersion()
+	public override string GetVersion()
 	{
 		return "v1.0.0";
 	}
 
-	public void OpenWebPage(string url)
+	public override void OpenWebPage(string url)
 	{
 		if(null == pluginSimple) return;
 
 		pluginSimple.CallStatic("OpenWebBrowser", url);
 	}
 
-	public void OpenEmbeddedWebPage(string url)
+	public override void OpenEmbeddedWebPage(string url)
 	{
 		if(null == pluginSimple) return;
 		
 		pluginSimple.CallStatic("OpenEmbeddedWebBrowser", url);
 	}
+#endif
 }
