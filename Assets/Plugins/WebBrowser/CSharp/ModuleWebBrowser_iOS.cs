@@ -21,4 +21,8 @@ public class ModuleWebBrowser_iOS : IModuleWebBrowser {
 	public void OpenEmbeddedWebPage(string url)
 	{
 	}
+
+	public void OpenEmbeddedWebPageData(string data)
+	{
+	}
 }
