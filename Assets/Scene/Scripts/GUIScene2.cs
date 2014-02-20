@@ -20,7 +20,7 @@ public class GUIScene2 : MonoBehaviour {
 		int nYPosCount = 0;
 		
 		if (GUI.Button (new Rect (fPosX, fPosY + (fYInterval * nYPosCount), 200, 80), "Web View")) {
-			CWSNativePluginMng.Instance().OpenEmbeddedWebPage("http://www.naver.com");
+			CWSNativePluginMng.Instance().OpenEmbeddedWebPage("http://www.google.com");
 		}
 		
 		nYPosCount++;
