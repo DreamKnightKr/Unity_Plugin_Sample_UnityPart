@@ -2,18 +2,7 @@
 using System.Collections;
 
 public class GUIScriptWebBrowser : MonoBehaviour {
-	ModuleManagerWebBrowser mngCSharp = null;
 	WWW www = null;
-
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-
-	}
 
 	void OnGUI ()
 	{
@@ -22,15 +11,12 @@ public class GUIScriptWebBrowser : MonoBehaviour {
 
 		// [C# -> C#] Change To Web page
 		if (GUI.Button (new Rect (fPosX, fPosY + (fYInterval * nYPosCount), 200, 80), "[C#->C#]Web View")) {
-			mngCSharp = GameObject.Find("NativeModule_CSharp").GetComponent<ModuleManagerWebBrowser>();
-			mngCSharp.OpenEmbeddedWebPage("http://www.naver.com");
+			CWSNativePluginMng.Instance().OpenEmbeddedWebPage("http://www.naver.com");
 		}
 
 		// [C# -> C#] Show On Web View
 		nYPosCount++;
 		if (GUI.Button(new Rect(fPosX, fPosY + (fYInterval * nYPosCount), 200, 80), "[C#->C#]Web View(StreamAsset)")) {
-			mngCSharp = GameObject.Find("NativeModule_CSharp").GetComponent<ModuleManagerWebBrowser>();
-
 			string url = Application.streamingAssetsPath + "/TestPage.html";
 			if (Application.platform != RuntimePlatform.Android)
 				url = "file://" + url;
@@ -52,7 +38,7 @@ public class GUIScriptWebBrowser : MonoBehaviour {
 			Debug.LogError ("Can't Load from StreamAsset!! \n" + www.error);
 		else {
 			// Byte Stream -> String
-			mngCSharp.OpenEmbeddedWebPageData(System.Text.Encoding.UTF8.GetString (www.bytes));
+			CWSNativePluginMng.Instance().OpenEmbeddedWebPageData(System.Text.Encoding.UTF8.GetString (www.bytes));
 			Debug.Log ("Load Done -> " + System.Text.Encoding.UTF8.GetString (www.bytes));
 		}
 		
