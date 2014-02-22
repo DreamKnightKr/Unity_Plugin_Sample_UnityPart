@@ -53,7 +53,10 @@ public class CWSNativePluginMng : MonoBehaviour, ICWSNativePluginHandler
 
 	public void OnCalledSimpleFunction (string arg)
 	{
-		this.onEvent(arg);
+		if(null != onEvent)
+			onEvent(arg);
+
+		onEvent = null;
 	}
 
 	public void OpenWebPage(string url)

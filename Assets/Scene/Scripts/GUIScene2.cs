@@ -36,11 +36,6 @@ public class GUIScene2 : MonoBehaviour {
 		}
 		
 		nYPosCount +=2;
-		if (GUI.Button (new Rect (fPosX, fPosY + (fYInterval * nYPosCount), 200, 60), "Scene3 >")) {
-			Application.LoadLevel("Scene3");
-		}
-
-		nYPosCount++;
 		if (GUI.Button (new Rect (fPosX, fPosY + (fYInterval * nYPosCount), 200, 60), "< Scene1")) {
 			Application.LoadLevel("Scene1");
 		}

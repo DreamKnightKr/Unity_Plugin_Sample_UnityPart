@@ -3,7 +3,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
-
+#if UNITY_IPHONE
 using Kogarasi.WebView;
 
 public class WebViewBehavior : MonoBehaviour
@@ -91,3 +91,4 @@ public class WebViewBehavior : MonoBehaviour
 #endregion
 
 }
+#endif
